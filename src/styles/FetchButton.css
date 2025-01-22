@@ -6,8 +6,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
+  }  
   .fetch-button:hover {
     background-color: #45a049;
   }

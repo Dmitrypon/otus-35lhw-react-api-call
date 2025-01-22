@@ -10,7 +10,7 @@ const CatFactsApp = () => {
 
   return (
     <div className="cat-facts-app">
-      <h1 className="header">Cat Facts</h1>
+      <h1 className="header">Факты о кошках</h1>
       <FetchButton onResult={setResult} onError={setError} onLoading={setLoading} />
       <ResultDisplay result={result} error={error} loading={loading} />
     </div>

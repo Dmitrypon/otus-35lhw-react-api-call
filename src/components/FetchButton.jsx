@@ -5,8 +5,8 @@ import "./../styles/FetchButton.css";
 const FetchButton = ({ onResult, onError, onLoading }) => {
   const fetchData = async () => {
     onLoading(true); // Показываем индикатор загрузки
-    onResult(null); // Сбрасываем предыдущее значение
-    onError(null);  // Сбрасываем ошибку
+    onResult(null); // Сбрасываем предыдущий текст
+    onError(null);  // Сбрасываем сообщение об ошибке
 
     try {
       const response = await axios.get("https://catfact.ninja/facts");
@@ -17,15 +17,15 @@ const FetchButton = ({ onResult, onError, onLoading }) => {
         throw new Error(`Unexpected response code: ${response.status}`);
       }
     } catch (err) {
-      onError(err.message); // Обрабатываем ошибку
+      onError(err.message); //  Обрабатываем ошибку
     } finally {
-      onLoading(false); // Скрываем индикатор загрузки
+      onLoading(false); //  Скрываем индикатор загрузки
     }
   };
 
   return (
     <button className="fetch-button" onClick={fetchData}>
-      Fetch Cat Fact
+      Вызов кошачьего факта
     </button>
   );
 };
