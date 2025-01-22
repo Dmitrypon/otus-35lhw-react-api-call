@@ -1,0 +1,22 @@
+.success {
+    background-color: rgb(73, 159, 73);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .error {
+    background-color: rgb(131, 54, 54);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .loading {
+    color: rgb(41, 41, 105);
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
