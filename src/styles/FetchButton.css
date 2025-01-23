@@ -1,10 +1,10 @@
 .fetch-button {
-    padding: 10px 20px;
+    padding: 10px 20px;   /* Внутренние отступы */
     font-size: 16px;
     background-color: #4caf50;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px;   /* Закругленные углы */
     cursor: pointer;
   }  
   .fetch-button:hover {
